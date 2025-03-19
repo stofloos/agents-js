@@ -164,7 +164,9 @@ export class AgentPlayout extends EventEmitter {
                     }
                     handle.synchronizer.pushText(text);
                   }
-                  handle.synchronizer.markTextSegmentEnd();
+                  if (!cancelled) {
+                    handle.synchronizer.markTextSegmentEnd();
+                  }
                   resolveText();
                 } catch (error) {
                   rejectText(error);
