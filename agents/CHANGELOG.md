@@ -1,5 +1,11 @@
 # @livekit/agents
 
+## 0.7.2
+
+### Patch Changes
+
+- fix(worker): reconnect on severed websocket conn - [#332](https://github.com/livekit/agents-js/pull/332) ([@nbsp](https://github.com/nbsp))
+
 ## 0.7.1
 
 ### Patch Changes
